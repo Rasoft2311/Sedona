@@ -1,2 +1,6 @@
+@import "vendors/bulma/sass/utilities/_all.sass";
+@import "vendors/bulma/sass/base/_all.sass";
+@import "vendors/bulma/sass/elements/container.sass";
 @import "vendors/normalize";
-@import "vendors/bulma/bulma";
+@import "units/base/output";
+@import "units/typography/output";
