@@ -4,3 +4,54 @@
 @import "vendors/normalize";
 @import "units/base/output";
 @import "units/typography/output";
+@import "components/navbar/output";
+@import "components/welcome-section/output";
+@import "elements/box/output";
+@import "components/reasons-section/output";
+
+.pos-rel{
+  position: relative;
+}
+
+.pos-abs{
+  position: absolute;
+}
+
+.disp-none{
+  display: none;
+}
+
+.disp-flex{
+  display: flex;
+}
+
+.visually-hidden{
+  position:absolute;
+  left:-99999px;
+}
+
+.info-about-sedona{
+  font-size: $typography-h2;
+  font-weight: bold;
+  background-color: $color-text;
+  display: flex;
+  justify-content: center;
+  padding-top:60px;
+  padding-bottom:40px;
+  line-height: 1.625rem;
+
+  span{
+    flex-basis: 445px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.reasons-section__h{
+  text-align: center;
+  font-size: $typography-text-small;
+  flex-basis:100%;
+  padding-bottom: 56px;
+  background-color: $color-text;
+  text-transform: uppercase;
+}

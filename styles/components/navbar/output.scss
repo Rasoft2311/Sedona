@@ -1,0 +1,104 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+header{
+  background-color: $color-text;
+}
+
+.nav-logo{
+  position: absolute;
+  top:0;
+  left: calc(50% - 69px);
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item{
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.nav-list__item-link {
+  font-weight: bold;
+  font-size:$typography-text-small;
+  color:$color-primary-text;
+}
+
+.nav-list__item-link:hover{
+  color:$color-primary;
+}
+
+.nav-list__item-link:active{
+  color:$color-form-icon;
+}
+
+.nav__buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 769px){
+
+
+  .nav-list{
+    display: block;
+  }
+
+  .nav__buttons .nav__button-open{
+    display: block;
+  }
+
+  .nav{
+    padding-top:80px;
+  }
+
+  .nav-list__item{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 769px){
+  .container{
+    max-width: 750px;
+  }
+
+  .nav-list__second-item-mr-right{
+    margin-right:137px;
+  }
+}
+
+@media screen and (min-width: 960px){
+  .container{
+    max-width: 900px;
+  }
+  .nav-list__second-item-mr-right{
+    margin-right: 218px;
+  }
+}
+
+@media screen and (min-width: 1088px){
+  .container{
+    max-width: 1000px;
+    width: 1000px;
+  }
+}
+
+@media screen and (min-width: 1280px){
+  .container{
+    max-width: 1050px;
+    width: 1050px;
+  }
+}
+
+
+
+

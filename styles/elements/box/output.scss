@@ -1,0 +1,59 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.box{
+  display:block;
+  padding:43px;
+  text-align: center;
+}
+
+.box__h{
+  font-weight: bold;
+  font-size:$typography-h2;
+  line-height: 1.312rem;
+  text-transform: uppercase;
+}
+
+.box__number{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size:$typography-text-small;
+  margin: 28px 0;
+}
+
+.box__text{
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size:$typography-text-small;
+}
+
+.list-box{
+  padding: 60px;
+  background-color:$color-text;
+  color:$color-primary-text;
+
+  .box__h{
+    margin: 32px 0;
+  }
+}
+
+.box--primary{
+  background-color: $color-primary;
+  color:$color-text;
+}
+
+.box--secondary{
+  background-color: $color-app-background;
+  color:$color-primary-text;
+}
+
+.box--flex-1{
+  flex: 1;
+}
+
+@include mobile{
+  .box--mobile-border-bottom{
+    border-bottom: 3px solid #8A4141;
+  }
+
+}
