@@ -7,7 +7,11 @@
 @import "components/navbar/output";
 @import "components/welcome-section/output";
 @import "elements/box/output";
+@import "elements/button/output";
 @import "components/reasons-section/output";
+@import "components/booking-section/output";
+@import "components/map-section/output";
+@import "components/footer/output";
 
 .pos-rel{
   position: relative;
@@ -44,6 +48,7 @@
     flex-basis: 445px;
     text-align: center;
     text-transform: uppercase;
+    color:$color-primary-text;
   }
 }
 
@@ -54,4 +59,5 @@
   padding-bottom: 56px;
   background-color: $color-text;
   text-transform: uppercase;
+  color:$color-secondary-text;
 }

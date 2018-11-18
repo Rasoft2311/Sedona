@@ -1,0 +1,72 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.booking-section{
+  background-color: $color-text;
+  position: relative;
+}
+
+.booking-section__interested{
+  padding-top: 57px;
+  padding-bottom: 36px;
+  text-align: center;
+  font-size: $typography-h1;
+  line-height: 1.625rem;
+  font-weight: bold;
+  color:$color-primary-text;
+  text-transform: uppercase;
+}
+
+.booking-section__show-text{
+  color:$color-secondary-text;
+  text-align: center;
+  font-size: $typography-text-small;
+  line-height: 1.625rem;
+  text-transform: uppercase;
+  max-width: 434px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-bottom:137px;
+}
+
+.booking-form{
+  z-index: 1;
+  background-color: $color-text;
+  position:absolute;
+  bottom: -417px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width:568px;
+  box-shadow: 0px 0px 21px 1px rgba(0,0,0,0.75);
+}
+
+.booking-form__h{
+  padding:33px 0;
+  text-align: center;
+  font-size: $typography-h1;
+  line-height: 1.625rem;
+  font-weight: bold;
+  color:$color-text;
+  text-transform: uppercase;
+  background-color: $color-secondary;
+}
+
+.booking-form__input-section{
+  padding:55px;
+}
+
+.booking-form__input-section-item{
+  padding-bottom: 29px;
+}
+
+.booking-form__input-section-button{
+  margin-top:25px;
+  width:100%;
+}
+
+.booking-form__input-section-label{
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $color-primary-text;
+}

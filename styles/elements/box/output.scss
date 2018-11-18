@@ -27,13 +27,19 @@
   font-size:$typography-text-small;
 }
 
+.box__text--transposition{
+  max-width: 19rem;
+  margin: 0 auto;
+}
+
 .list-box{
   padding: 60px;
   background-color:$color-text;
-  color:$color-primary-text;
+  color:$color-secondary-text;
 
   .box__h{
     margin: 32px 0;
+    color:$color-primary-text;
   }
 }
 
@@ -44,7 +50,10 @@
 
 .box--secondary{
   background-color: $color-app-background;
-  color:$color-primary-text;
+  color:$color-secondary-text;
+  .box__h{
+    color:$color-primary-text;
+  }
 }
 
 .box--flex-1{
@@ -53,7 +62,7 @@
 
 @include mobile{
   .box--mobile-border-bottom{
-    border-bottom: 3px solid #8A4141;
+    border-bottom: 2px solid #8A4141;
   }
 
 }

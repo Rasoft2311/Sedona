@@ -1,0 +1,15 @@
+.map-section__image{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 50%;
+  top:0;
+  transform: translateX(-50%);
+  max-width: none;
+}
+
+.map-section{
+  position: relative;
+  height: 474px;
+  overflow: hidden;
+}

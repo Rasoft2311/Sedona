@@ -1,0 +1,33 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.footer{
+  padding:36px 0;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-text;
+}
+
+.footer{
+  img{
+    color:black;
+  }
+}
+
+.footer__hashtag{
+  color: $color-primary-text;
+  font-size: $typography-h2;
+  text-transform: uppercase;
+}
+
+.footer__referals{
+  display: flex;
+
+}
+
+.footer__author-text{
+  color: $color-primary-text;
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+}

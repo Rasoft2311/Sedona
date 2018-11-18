@@ -46,7 +46,7 @@
         <div class="box box--flex-1 box--primary">
           <h3 class="box__h">Настоящий городок</h3>
           <p class="box__number">#1</p>
-          <p class="box__text">Cедона — не аттракцион для туристов, там течет своя жизнь</p>
+          <p class="box__text box__text--transposition">Cедона — не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="reasons-image-cover"><img class="reasons-image" src="./images/sedona-camp.jpg" alt="Настоящий годок в Седоне" /></div>
 
@@ -74,7 +74,7 @@
         <div class="box box--flex-1 box--primary">
           <h3 class="box__h">Там есть Мост Дьявола</h3>
           <p class="box__number">#2</p>
-          <p class="box__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="box__text box__text--transposition">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
       </section>
 
@@ -97,52 +97,53 @@
       </section>
     </section>
 
-  <section>
-      <p>Заинтересовались?</p>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+  <section class="booking-section">
+      <p class="booking-section__interested">Заинтересовались?</p>
+      <p class="booking-section__show-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
 
-      <form name="appartments-search" method="post">
-        <h2>Поиск гостиницы в Седоне</h2>
-        <p>
-          <label for="appartments-search-check-in">Дата заезда:</label>
-          <input id="appartments-search-check-in" type="date" />
-        </p>
-        <p>
-          <label for="appartments-search-check-out">Дата выезда:</label>
-          <input id="appartments-search-check-out" type="date" />
-        </p>
-        <p>
-          <label for="appartments-search-adults-amount">Взрослые:</label>
-          <input type="number" id="appartments-search-adults-amount" />
-        </p>
-        <p>
-          <label for="appartments-search-children-amount">Дети:</label>
-          <input type="number" id="appartments-search-children-amount" />
-        </p>
-
-        <button type="submit">Найти</button>
+      <form class="booking-form" name="appartments-search" method="post">
+        <h2 class="booking-form__h">Поиск гостиницы в Седоне</h2>
+        <div class="booking-form__input-section">
+          <p class="booking-form__input-section-item">
+            <label class="booking-form__input-section-label" for="appartments-search-check-in">Дата заезда:</label>
+            <input id="appartments-search-check-in" type="date" />
+          </p>
+          <p class="booking-form__input-section-item">
+            <label class="booking-form__input-section-label" for="appartments-search-check-out">Дата выезда:</label>
+            <input id="appartments-search-check-out" type="date" />
+          </p>
+          <p class="booking-form__input-section-item">
+            <label class="booking-form__input-section-label" for="appartments-search-adults-amount">Взрослые:</label>
+            <input type="number" id="appartments-search-adults-amount" />
+          </p>
+          <p class="booking-form__input-section-item">
+            <label class="booking-form__input-section-label" for="appartments-search-children-amount">Дети:</label>
+            <input type="number" id="appartments-search-children-amount" />
+          </p>
+          <button class="button booking-form__input-section-button" type="submit">Найти</button>
+        </div>
       </form>
     </section>
 
-    <section>
-      <h2>Карта местности Седоны</h2>
-      <img src="./images/sedona-map.jpg" alt="Город, расположенный по обе стороны границы между округами Коконино и Явапай в северной области Долины Верде штата Аризона" />
+    <section class="map-section">
+      <h2 class="visually-hidden">Карта местности Седоны</h2>
+      <img class="map-section__image" src="./images/sedona-map.jpg" alt="Город, расположенный по обе стороны границы между округами Коконино и Явапай в северной области Долины Верде штата Аризона" />
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <p>
-      <span>#visitsedona</span>
+      <span class="footer__hashtag">#visitsedona</span>
     </p>
 
-    <ul>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">Youtube</a></li>
+    <ul class="footer__referals">
+      <li class="footer__referals-item"><a href="#">Twitter</a></li>
+      <li class="footer__referals-item"><a href="#">Facebook</a></li>
+      <li class="footer__referals-item"><a href="#">Youtube</a></li>
     </ul>
 
     <p>
-      <span>Website by</span> <img width="115" height="41" src="icons/htmlacademy-logo.svg" alt="Логотип HtmlAcademy" />
+      <span class="footer__author-text">Website by</span> <img width="115" height="41" src="icons/htmlacademy-logo.svg" alt="Логотип HtmlAcademy" />
     </p>
   </footer>
 </body>

@@ -1,0 +1,12 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.button{
+  padding: 21px 0;
+  color:$color-text;
+  background-color: $color-primary;
+  border:none;
+  border-radius: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
