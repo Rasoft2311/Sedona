@@ -2040,6 +2040,17 @@ header {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 768px) {
+  .booking-form {
+    width: 100%;
+    min-width: 0;
+    bottom: -480px;
+  }
+
+  .booking-form__input-section-amount {
+    display: block;
+  }
+}
 .map-section__image {
   position: absolute;
   min-width: 100%;
@@ -2095,6 +2106,21 @@ header {
   margin-right: 7px;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    display: block;
+    text-align: center;
+  }
+
+  .htmlacademy-info {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__referals {
+    margin: 30px 0;
+  }
+}
 .input-date {
   position: relative;
 }
@@ -2211,6 +2237,12 @@ header {
   background-color: #FFF;
   text-transform: uppercase;
   color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .mob-only-ml-54 {
+    margin-left: 54px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

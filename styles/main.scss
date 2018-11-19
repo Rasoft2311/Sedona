@@ -66,3 +66,10 @@
   text-transform: uppercase;
   color:$color-secondary-text;
 }
+
+@include mobile{
+
+  .mob-only-ml-54{
+    margin-left: 54px;
+  }
+}

@@ -83,3 +83,16 @@
   justify-content: space-between;
 }
 
+@include mobile{
+  .booking-form{
+    width:100%;
+    min-width: 0;
+    bottom: -480px;
+  }
+
+  .booking-form__input-section-amount{
+    display: block;
+  }
+
+}
+
