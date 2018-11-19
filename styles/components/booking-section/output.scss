@@ -57,6 +57,8 @@
 
 .booking-form__input-section-item{
   padding-bottom: 29px;
+  display: flex;
+  align-items: center;
 }
 
 .booking-form__input-section-button{
@@ -69,4 +71,15 @@
   text-transform: uppercase;
   font-weight: bold;
   color: $color-primary-text;
+  margin-right: 22px;
 }
+
+.booking-form__input-section-input-date{
+  flex:1;
+}
+
+.booking-form__input-section-amount{
+  display:flex;
+  justify-content: space-between;
+}
+

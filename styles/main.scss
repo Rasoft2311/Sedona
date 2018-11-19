@@ -12,6 +12,11 @@
 @import "components/booking-section/output";
 @import "components/map-section/output";
 @import "components/footer/output";
+@import "elements/input/output";
+
+.ml-20px{
+  margin-left: 20px;
+}
 
 .pos-rel{
   position: relative;

@@ -30,8 +30,6 @@
 
 
 @include tablet{
-
-
   .large-reason-section{
     display: flex;
     flex-wrap: wrap;
@@ -48,4 +46,44 @@
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+@include mobile{
+  html{
+    background-color: $color-text;
+  }
+
+  .box--secondary{
+    max-width: 471px;
+    margin: 0 auto;
+    border-bottom: 1px solid lightgray;
+    padding-left:70px;
+    padding-right: 70px;
+  }
+
+  .list-box{
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border:none;
+    padding:10px;
+    text-align: start;
+
+    .box__h{
+      margin-bottom: 20px;
+    }
+
+    .secondary-reasons__svg{
+      //svg{
+      //  width: 20px;
+      //  height: 20px;
+      //}
+      position: absolute;
+      top:40px;
+      left:-75px;
+    }
+  }
+
+
+
 }

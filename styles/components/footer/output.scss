@@ -7,11 +7,28 @@
   justify-content: space-around;
   align-items: center;
   background-color: $color-text;
+
 }
 
-.footer{
-  img{
-    color:black;
+.htmlacademy-info{
+  display: flex;
+  align-items: center;
+
+
+  path{
+    fill: $color-primary-text;
+  }
+
+  svg:hover{
+    path{
+      fill:$color-primary;
+    }
+  }
+
+  svg:active{
+    path{
+      fill:$color-control-arrow;
+    }
   }
 }
 
@@ -22,12 +39,18 @@
 }
 
 .footer__referals{
-  display: flex;
+  //display: flex;
+}
 
+.footer__referals-item{
+  path{
+    fill: $color-primary;
+  }
 }
 
 .footer__author-text{
   color: $color-primary-text;
   font-size: $typography-text-small;
   text-transform: uppercase;
+  margin-right: 7px;
 }

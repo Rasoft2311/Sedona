@@ -1,0 +1,82 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.input-date{
+  position: relative;
+  .input-date__calendar{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform:translateY(-50%);
+    cursor: pointer;
+    path{
+      fill:$color-form-icon;
+    }
+  }
+
+  svg:hover{
+    path{
+      fill:$color-primary-text;
+    }
+  }
+  svg:active{
+    path{
+      fill:$color-primary;
+    }
+  }
+
+  input{
+    padding: 12px;
+    border: 2px solid $color-form-control;
+    background-color: $color-form-control;
+    font-size: $typography-text-small;
+    font-weight: bold;
+    width:100%;
+    outline:none;
+  }
+
+  input:hover{
+    background-color: $color-form-control-hover;
+    border-color: $color-form-control-hover;
+  }
+
+  input:focus{
+    background-color:$color-text;
+    border-color:$color-form-control-hover;
+  }
+}
+
+.input-number{
+  display: flex;
+  min-height: 38px;
+
+  .input-number__switch-button{
+    cursor: pointer;
+    color:$color-form-icon;
+    font-size: $typography-h2;
+    font-weight: bold;
+    width: 38px;
+    border:none;
+    background-color: $color-form-control;
+    outline: none;
+  }
+
+  .input-number__switch-button:hover{
+    color:$color-primary-text;
+  }
+
+  .input-number__switch-button:active{
+    color:$color-primary;
+  }
+
+  input{
+    font-size: $typography-text-small;
+    font-weight: bold;
+    background-color: $color-form-control;
+    width: 38px;
+    text-align: center;
+    border:none;
+  }
+
+
+}
