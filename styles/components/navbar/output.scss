@@ -11,6 +11,7 @@ header{
 }
 
 .nav__logo{
+  z-index: 2;
   position: absolute;
   top:0;
   left: calc(50% - 69px);
