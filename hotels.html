@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="#">
+            <img width="138" height="70" src="./images/logo.png" alt="Логотип City of Sedona" />
+        </a>
+
+        <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиницы</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Выбор гостиниц</h1>
+  <section>
+      <h2>Выбор параметров гостиницы</h2>
+      <form>
+          <fieldset>
+              <legend>Инфраструктура:</legend>
+              <input type="checkbox"> Бассейн<br>
+              <input type="checkbox"> Парковка<br>
+              <input type="checkbox"> Wi-Fi
+          </fieldset>
+          <fieldset>
+              <legend>Тип жилья:</legend>
+              <input type="checkbox"> Гостиница<br>
+              <input type="checkbox"> Мотель<br>
+              <input type="checkbox"> Апартаменты
+          </fieldset>
+          <fieldset>
+              <legend>Стоимость в сутки:</legend>
+              <p>
+                  <span>От</span>
+                  <span>До</span>
+              </p>
+              <input type="range"><br>
+              <button>Показать</button>
+          </fieldset>
+      </form>
+  </section>
+
+    <section>
+        <h2>Найденные гостиницы</h2>
+        <section>
+            <span>Найдено:3</span>
+            <h3>Сортировка:</h3>
+            <ul>
+                <li>ПО цене</li>
+                <li>По типу</li>
+                <li>По рейтингу</li>
+            </ul>
+            <img src="icons/arrow-up.svg" alt="Стрелка вверх">
+            <img src="icons/arrow-down.svg" alt="Стрелка вниз">
+        </section>
+        <ul>
+            <li>
+                <img width="135" height="90" src="images/devils-bridge.jpg">
+                <h2>AMARA RESORT & SPA</h2>
+                <p>
+                    <span>Гостиница</span>
+                    <span>От 4000 Р.</span>
+                </p>
+                <button>Подробнее</button>
+                <button>Забронировать</button>
+                <span>
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                </span>
+                <span>Рейтинг:8.5</span>
+            </li>
+            <li>
+                <img width="135" height="90" src="images/devils-bridge.jpg">
+                <h2>DESERT QUAIL INN</h2>
+                <p>
+                    <span>Мотель</span>
+                    <span>От 3000 Р.</span>
+                </p>
+                <button>Подробнее</button>
+                <button>Забронировать</button>
+                <span>
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                </span>
+                <span>Рейтинг:8.9</span>
+            </li>
+            <li>
+                <img width="135" height="90" src="images/devils-bridge.jpg">
+                <h2>VILLAS AT POCO DIABLO</h2>
+                <p>
+                    <span>Апартаменты</span>
+                    <span>От 2000 Р.</span>
+                </p>
+                <button>Подробнее</button>
+                <button>Забронировать</button>
+                <span>
+                    <img src="icons/form-start.svg">
+                    <img src="icons/form-start.svg">
+                </span>
+                <span>Рейтинг:9.2</span>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer>
+    <p>
+        <span>#visitsedona</span>
+    </p>
+
+    <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Youtube</a></li>
+    </ul>
+
+    <p>
+        <span>Website by</span> <img width="115" height="41" src="./icons/htmlacademy.svg" alt="Логотип 
+HtmlAcademy" />
+    </p>
+</footer>
+</body>
+</html>
