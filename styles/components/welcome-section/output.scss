@@ -1,5 +1,6 @@
-.image-rocks{
+.welcome-section__image-rocks{
   z-index: -1;
+  position: absolute;
   top:0;
   left:50%;
   transform: translateX(-50%);
@@ -19,20 +20,21 @@
   }
 }
 
-.image-welcome{
+.welcome-section__image-welcome{
   padding: 0 17%;
 }
 
-.image-sedona{
+.welcome-section__image-sedona{
   margin-top: 52px;
   margin-bottom: 52px;
 }
 
-.image-sucks{
+.welcome-section__image-sucks{
   padding:0 5%;
 }
 
 .welcome-section{
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;

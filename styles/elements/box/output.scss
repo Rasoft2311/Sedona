@@ -27,7 +27,7 @@
   font-size:$typography-text-small;
 }
 
-.box__text--transposition{
+.box__text--min-width{
   max-width: 19rem;
   margin: 0 auto;
 }
@@ -46,9 +46,11 @@
 .box--primary{
   background-color: $color-primary;
   color:$color-text;
+  flex-basis: 33.33%;
 }
 
 .box--secondary{
+  flex-basis: 33.33%;
   background-color: $color-app-background;
   color:$color-secondary-text;
   .box__h{
@@ -56,9 +58,7 @@
   }
 }
 
-.box--flex-1{
-  flex: 1;
-}
+
 
 @include mobile{
   .box--mobile-border-bottom{

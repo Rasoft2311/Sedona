@@ -3,9 +3,14 @@
 
 header{
   background-color: $color-text;
+  text-transform: uppercase;
 }
 
-.nav-logo{
+.nav{
+  position: relative;
+}
+
+.nav__logo{
   position: absolute;
   top:0;
   left: calc(50% - 69px);
@@ -38,20 +43,19 @@ header{
   color:$color-form-icon;
 }
 
-.nav__buttons{
+.nav__toggler{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 769px){
-
+@include mobile{
 
   .nav-list{
     display: block;
   }
 
-  .nav__buttons .nav__button-open{
+  .nav__toggler .nav__toggler-open{
     display: block;
   }
 
@@ -61,14 +65,20 @@ header{
 
   .nav-list__item{
     display:flex;
+    align-items: stretch;
+  }
+
+  .nav-list__item-link{
+    flex-basis: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 769px){
-  .container{
-    max-width: 750px;
+@include tablet{
+  .nav{
+    padding: 0 50px;
   }
 
   .nav-list__second-item-mr-right{
@@ -76,28 +86,23 @@ header{
   }
 }
 
-@media screen and (min-width: 960px){
-  .container{
-    max-width: 900px;
-  }
+@include desktop{
+
   .nav-list__second-item-mr-right{
     margin-right: 218px;
   }
-}
 
-@media screen and (min-width: 1088px){
-  .container{
-    max-width: 1000px;
-    width: 1000px;
+  .nav{
+    padding: 0 75px;
   }
 }
 
-@media screen and (min-width: 1280px){
-  .container{
-    max-width: 1050px;
-    width: 1050px;
+@include widescreen{
+  .nav{
+    padding: 0 100px;
   }
 }
+
 
 
 

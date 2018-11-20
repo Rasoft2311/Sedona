@@ -39,12 +39,24 @@
 }
 
 .footer__referals{
-  //display: flex;
+  display: flex;
 }
 
 .footer__referals-item{
+
+  margin: 0 3px;
+
+  a{
+    width:46px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-primary;
+  }
+
   path{
-    fill: $color-primary;
+    fill: $color-text;
   }
 }
 
@@ -68,5 +80,6 @@
 
   .footer__referals{
     margin: 30px 0;
+    justify-content: center;
   }
 }

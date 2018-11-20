@@ -1641,9 +1641,14 @@ html, body {
 
 header {
   background-color: #FFF;
+  text-transform: uppercase;
 }
 
-.nav-logo {
+.nav {
+  position: relative;
+}
+
+.nav__logo {
   position: absolute;
   top: 0;
   left: calc(50% - 69px);
@@ -1674,18 +1679,18 @@ header {
   color: #a9a9a9;
 }
 
-.nav__buttons {
+.nav__toggler {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .nav-list {
     display: block;
   }
 
-  .nav__buttons .nav__button-open {
+  .nav__toggler .nav__toggler-open {
     display: block;
   }
 
@@ -1695,42 +1700,42 @@ header {
 
   .nav-list__item {
     display: flex;
+    align-items: stretch;
+  }
+
+  .nav-list__item-link {
+    flex-basis: 100%;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
 }
-@media screen and (min-width: 769px) {
-  .container {
-    max-width: 750px;
+@media screen and (min-width: 769px), print {
+  .nav {
+    padding: 0 50px;
   }
 
   .nav-list__second-item-mr-right {
     margin-right: 137px;
   }
 }
-@media screen and (min-width: 960px) {
-  .container {
-    max-width: 900px;
-  }
-
+@media screen and (min-width: 1088px) {
   .nav-list__second-item-mr-right {
     margin-right: 218px;
   }
-}
-@media screen and (min-width: 1088px) {
-  .container {
-    max-width: 1000px;
-    width: 1000px;
+
+  .nav {
+    padding: 0 75px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .container {
-    max-width: 1050px;
-    width: 1050px;
+  .nav {
+    padding: 0 100px;
   }
 }
-.image-rocks {
+.welcome-section__image-rocks {
   z-index: -1;
+  position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -1741,7 +1746,7 @@ header {
   max-width: none;
 }
 @supports (object-fit: cover) {
-  .image-rocks {
+  .welcome-section__image-rocks {
     left: 0;
     width: 100%;
     height: 100%;
@@ -1751,20 +1756,21 @@ header {
   }
 }
 
-.image-welcome {
+.welcome-section__image-welcome {
   padding: 0 17%;
 }
 
-.image-sedona {
+.welcome-section__image-sedona {
   margin-top: 52px;
   margin-bottom: 52px;
 }
 
-.image-sucks {
+.welcome-section__image-sucks {
   padding: 0 5%;
 }
 
 .welcome-section {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1802,7 +1808,7 @@ header {
   font-size: 0.875rem;
 }
 
-.box__text--transposition {
+.box__text--min-width {
   max-width: 19rem;
   margin: 0 auto;
 }
@@ -1820,18 +1826,16 @@ header {
 .box--primary {
   background-color: #81b3d2;
   color: #FFF;
+  flex-basis: 33.33%;
 }
 
 .box--secondary {
+  flex-basis: 33.33%;
   background-color: #eeeeee;
   color: #333;
 }
 .box--secondary .box__h {
   color: #000;
-}
-
-.box--flex-1 {
-  flex: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -1885,7 +1889,7 @@ header {
 
 .reasons-image-cover {
   position: relative;
-  flex: 2;
+  flex-basis: 66.66%;
   min-height: 256px;
   overflow: hidden;
 }
@@ -1990,7 +1994,7 @@ header {
   z-index: 1;
   background-color: #FFF;
   position: absolute;
-  bottom: -417px;
+  top: calc(100% - 92px);
   left: 50%;
   transform: translateX(-50%);
   min-width: 568px;
@@ -2095,8 +2099,23 @@ header {
   text-transform: uppercase;
 }
 
+.footer__referals {
+  display: flex;
+}
+
+.footer__referals-item {
+  margin: 0 3px;
+}
+.footer__referals-item a {
+  width: 46px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #81b3d2;
+}
 .footer__referals-item path {
-  fill: #81b3d2;
+  fill: #FFF;
 }
 
 .footer__author-text {
@@ -2119,6 +2138,7 @@ header {
 
   .footer__referals {
     margin: 30px 0;
+    justify-content: center;
   }
 }
 .input-date {
@@ -2189,14 +2209,6 @@ header {
 
 .ml-20px {
   margin-left: 20px;
-}
-
-.pos-rel {
-  position: relative;
-}
-
-.pos-abs {
-  position: absolute;
 }
 
 .disp-none {
