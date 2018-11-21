@@ -30,15 +30,15 @@
       <form>
           <fieldset>
               <legend>Инфраструктура:</legend>
-              <input type="checkbox"> Бассейн<br>
-              <input type="checkbox"> Парковка<br>
-              <input type="checkbox"> Wi-Fi
+              <value><input type="checkbox" name="accessibility" value="pool"></value> Бассейн<br>
+              <value><input type="checkbox" name="accessibility" value="parking"> Парковка</value><br>
+              <value><input type="checkbox" name="accessibility" value="wifi"> Wi-Fi</value>
           </fieldset>
           <fieldset>
               <legend>Тип жилья:</legend>
-              <input type="checkbox"> Гостиница<br>
-              <input type="checkbox"> Мотель<br>
-              <input type="checkbox"> Апартаменты
+              <value><input type="checkbox" name="living" value="hotel"> Гостиница</value><br>
+              <value><input type="checkbox" name="living" value="motel"> Мотель</value><br>
+              <value><input type="checkbox" name="living" value="apartment"> Апартаменты</value>
           </fieldset>
           <fieldset>
               <legend>Стоимость в сутки:</legend>
@@ -46,7 +46,7 @@
                   <span>От</span>
                   <span>До</span>
               </p>
-              <input type="range"><br>
+              <input type="range" name="range"><br>
               <button>Показать</button>
           </fieldset>
       </form>
