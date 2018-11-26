@@ -1681,17 +1681,19 @@ header {
 }
 
 .nav__toggler {
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.nav__toggler button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 768px) {
   .nav-list {
-    display: block;
-  }
-
-  .nav__toggler .nav__toggler-open {
     display: block;
   }
 
@@ -1800,8 +1802,8 @@ header {
 }
 
 .box {
+  padding: 50px 43px;
   display: block;
-  padding: 43px;
   text-align: center;
 }
 
@@ -1852,12 +1854,62 @@ header {
   color: #333;
 }
 .box--secondary .box__h {
+  max-width: 150px;
+  margin: 0 auto;
   color: #000;
 }
 
 @media screen and (max-width: 768px) {
-  .box--mobile-border-bottom {
-    border-bottom: 2px solid #8A4141;
+  .box--secondary {
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+
+  .mobile-box-border-bottom::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    background-color: lightgray;
+  }
+
+  .list-box {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border: none;
+    padding: 10px;
+    text-align: start;
+  }
+  .list-box .box__h {
+    margin-bottom: 20px;
+  }
+  .list-box .secondary-reasons__svg {
+    position: absolute;
+    top: 40px;
+    left: -75px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .box {
+    padding: 50px 35px 40px 35px;
+  }
+
+  .list-box {
+    padding: 38px;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .box {
+    padding: 50px 43px;
+  }
+
+  .list-box {
+    padding: 60px;
   }
 }
 .button {
@@ -1954,29 +2006,12 @@ header {
     background-color: #FFF;
   }
 
-  .box--secondary {
-    max-width: 471px;
-    margin: 0 auto;
-    border-bottom: 1px solid lightgray;
-    padding-left: 70px;
-    padding-right: 70px;
+  .reasons-section {
+    background-color: #eeeeee;
   }
 
-  .list-box {
-    position: relative;
-    max-width: 300px;
-    margin: 0 auto;
-    border: none;
-    padding: 10px;
-    text-align: start;
-  }
-  .list-box .box__h {
-    margin-bottom: 20px;
-  }
-  .list-box .secondary-reasons__svg {
-    position: absolute;
-    top: 40px;
-    left: -75px;
+  .secondary-reasons {
+    background-color: #FFF;
   }
 }
 .booking-section {
@@ -2131,6 +2166,12 @@ header {
   align-items: center;
   background-color: #81b3d2;
 }
+.footer__referals-item a:hover {
+  background-color: #669ec0;
+}
+.footer__referals-item a:active {
+  background-color: #5496bd;
+}
 .footer__referals-item path {
   fill: #FFF;
 }
@@ -2238,7 +2279,10 @@ header {
 
 .visually-hidden {
   position: absolute;
-  left: -99999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
 .info-about-sedona {

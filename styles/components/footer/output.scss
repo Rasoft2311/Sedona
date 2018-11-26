@@ -55,6 +55,14 @@
     background-color: $color-primary;
   }
 
+  a:hover{
+   background-color: $color-primary-hover;
+  }
+
+  a:active{
+    background-color: $color-primary-active;
+  }
+
   path{
     fill: $color-text;
   }

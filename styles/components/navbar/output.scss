@@ -45,6 +45,13 @@ header{
 }
 
 .nav__toggler{
+  button{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,10 +60,6 @@ header{
 @include mobile{
 
   .nav-list{
-    display: block;
-  }
-
-  .nav__toggler .nav__toggler-open{
     display: block;
   }
 

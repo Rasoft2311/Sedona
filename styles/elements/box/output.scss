@@ -2,8 +2,8 @@
 @import "../../units/typography/utils";
 
 .box{
+  padding:50px 43px;
   display:block;
-  padding:43px;
   text-align: center;
 }
 
@@ -54,6 +54,8 @@
   background-color: $color-app-background;
   color:$color-secondary-text;
   .box__h{
+    max-width: 150px;
+    margin:0 auto;
     color:$color-primary-text;
   }
 }
@@ -61,8 +63,64 @@
 
 
 @include mobile{
-  .box--mobile-border-bottom{
-    border-bottom: 2px solid #8A4141;
+  .box--secondary{
+    position: relative;
+    max-width: 450px;
+    margin: 0 auto;
   }
+
+  .mobile-box-border-bottom::after{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:0;
+    background-color: lightgray;
+  }
+
+  .list-box{
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    border:none;
+    padding:10px;
+    text-align: start;
+
+    .box__h{
+      margin-bottom: 20px;
+    }
+
+    .secondary-reasons__svg{
+      position: absolute;
+      top:40px;
+      left:-75px;
+    }
+  }
+
+}
+
+@include tablet{
+  .box{
+    padding: 50px 35px 40px 35px;
+  }
+
+  .list-box{
+    padding: 38px;
+  }
+
+}
+
+@include desktop{
+
+  .box{
+    padding:50px 43px;
+  }
+
+  .list-box{
+    padding: 60px;
+  }
+
 
 }
