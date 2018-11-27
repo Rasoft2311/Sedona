@@ -1714,6 +1714,10 @@ header {
   }
 }
 @media screen and (min-width: 769px), print {
+  .nav__toggler {
+    display: none;
+  }
+
   .nav {
     padding: 0 50px;
   }
@@ -2312,9 +2316,17 @@ header {
   color: #333;
 }
 
+fieldset {
+  border: none;
+}
+
 @media screen and (max-width: 768px) {
   .mob-only-ml-54 {
     margin-left: 54px;
+  }
+
+  .disp-none-mobile {
+    display: none;
   }
 }
 

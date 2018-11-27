@@ -81,6 +81,11 @@ header{
 }
 
 @include tablet{
+
+  .nav__toggler{
+    display: none;
+  }
+
   .nav{
     padding: 0 50px;
   }

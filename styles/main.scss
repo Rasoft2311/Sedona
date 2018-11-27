@@ -62,9 +62,17 @@
   color:$color-secondary-text;
 }
 
+fieldset{
+  border:none;
+}
+
 @include mobile{
 
   .mob-only-ml-54{
     margin-left: 54px;
+  }
+
+  .disp-none-mobile{
+    display: none;
   }
 }
