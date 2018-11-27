@@ -76,3 +76,23 @@ fieldset{
     display: none;
   }
 }
+
+@include tablet{
+
+  .section{
+    padding: 0 50px;
+  }
+}
+
+@include desktop{
+
+  .section{
+    padding: 0 75px;
+  }
+}
+
+@include widescreen{
+  .section{
+    padding: 0 100px;
+  }
+}

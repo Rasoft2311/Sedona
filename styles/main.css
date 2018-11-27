@@ -1718,10 +1718,6 @@ header {
     display: none;
   }
 
-  .nav {
-    padding: 0 50px;
-  }
-
   .nav-list__second-item-mr-right {
     margin-right: 137px;
   }
@@ -1729,15 +1725,6 @@ header {
 @media screen and (min-width: 1088px) {
   .nav-list__second-item-mr-right {
     margin-right: 218px;
-  }
-
-  .nav {
-    padding: 0 75px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .nav {
-    padding: 0 100px;
   }
 }
 .welcome-section__image-rocks {
@@ -2327,6 +2314,21 @@ fieldset {
 
   .disp-none-mobile {
     display: none;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .section {
+    padding: 0 50px;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .section {
+    padding: 0 75px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section {
+    padding: 0 100px;
   }
 }
 
