@@ -33,30 +33,62 @@
 </header>
 
 <main>
-    <h1>Выбор гостиниц</h1>
-  <section>
-      <h2>Выбор параметров гостиницы</h2>
-      <form id="hotel-parametrs-form">
-          <fieldset>
+    <h1 class="visually-hidden">Выбор гостиниц</h1>
+  <section class="select-section section">
+      <h2 class="visually-hidden">Выбор параметров гостиницы</h2>
+      <form class="select-section__form" id="hotel-parametrs-form">
+          <fieldset class="select-section__form-check">
               <legend>Инфраструктура:</legend>
-              <value><input type="checkbox" name="accessibility" value="pool"></value> Бассейн<br>
-              <value><input type="checkbox" name="accessibility" value="parking"> Парковка</value><br>
-              <value><input type="checkbox" name="accessibility" value="wifi"> Wi-Fi</value>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                  </span>
+                  <input type="checkbox" name="accessibility" value="pool">Бассейн
+              </label>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                  </span>
+                  <input type="checkbox" name="accessibility" value="parking"> Парковка
+              </label>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
+                  </span>
+                  <input type="checkbox" name="accessibility" value="wifi"> Wi-Fi
+              </label>
           </fieldset>
-          <fieldset>
+          <fieldset class="select-section__form-check">
               <legend>Тип жилья:</legend>
-              <value><input type="checkbox" name="living" value="hotel"> Гостиница</value><br>
-              <value><input type="checkbox" name="living" value="motel"> Мотель</value><br>
-              <value><input type="checkbox" name="living" value="apartment"> Апартаменты</value>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                  </span>
+                  <input type="checkbox" name="living" value="hotel"> Гостиница
+              </label>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                  </span>
+                  <input type="checkbox" name="living" value="motel"> Мотель
+              </label>
+              <label class="select-section__form-check-label">
+                  <span class="custom-checkbox">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
+                  </span>
+                  <input type="checkbox" name="living" value="apartment"> Апартаменты
+              </label>
           </fieldset>
-          <fieldset>
-              <legend>Стоимость в сутки:</legend>
-              <p>
-                  <span>От</span>
-                  <span>До</span>
+          <fieldset class="select-section__form-range">
+              <legend>Стоимость в сутки(P):</legend>
+              <p class="range-box-wrap">
+                  <span class="range-box">
+                      <span class="range-box__from">От 0</span>
+                      <span class="range-box__to">До 3000</span>
+                  </span>
               </p>
-              <input type="range" name="range"><br>
-              <button>Показать</button>
+              <input class="input-range" type="range" name="range"><br>
+              <button class="select-section__form-range__button">Показать</button>
           </fieldset>
       </form>
   </section>

@@ -13,6 +13,8 @@
 @import "components/map-section/output";
 @import "components/footer/output";
 @import "elements/input/output";
+@import "components/select-section/output";
+@import "elements/range/output";
 
 .ml-20px{
   margin-left: 20px;
@@ -64,6 +66,7 @@
 
 fieldset{
   border:none;
+  padding: 0;
 }
 
 @include mobile{

@@ -1,0 +1,19 @@
+.input-range {
+  width: 220px;
+  -webkit-appearance: none;
+  height: 2px;
+  background-color: $color-form-icon;
+}
+
+.input-range:focus {
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  height: 23px;
+  width: 20px;
+  background-image: url("../icons/form-circle.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-appearance: none;
+}

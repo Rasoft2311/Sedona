@@ -2256,6 +2256,178 @@ header {
   border: none;
 }
 
+.select-section {
+  background-image: url("../images/red-rocks-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 80%;
+}
+
+.select-section__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 20px;
+}
+
+.select-section__form-check {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+.select-section__form-check legend {
+  color: #503e33;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.select-section__form-check input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.select-section__form-range {
+  flex-basis: 100%;
+  margin-top: 25px;
+}
+.select-section__form-range legend {
+  color: #FFF;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+.select-section__form-range .range-box-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px;
+}
+.select-section__form-range .range-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-basis: 220px;
+  min-height: 35px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+}
+.select-section__form-range .range-box .range-box__from {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.select-section__form-range .range-box .range-box__from::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  right: 50%;
+  top: 5px;
+  bottom: 5px;
+  transform: translateX(-50%);
+  background-color: #FFF;
+}
+.select-section__form-range .range-box .range-box__to {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.select-section__form-range input {
+  display: block;
+  margin: 0 auto;
+}
+.select-section__form-range .select-section__form-range__button {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  width: 133px;
+  height: 32px;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.select-section__form-check-label {
+  cursor: pointer;
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 35px;
+}
+
+.custom-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.custom-checkbox path {
+  fill: #FFF;
+}
+
+@media screen and (min-width: 769px), print {
+  .select-section__form {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 30px 0;
+  }
+
+  .select-section__form-check {
+    flex-basis: 33.33%;
+  }
+  .select-section__form-check legend {
+    color: #FFF;
+  }
+
+  .select-section__form-range {
+    flex-basis: 33.33%;
+    margin-top: 0;
+  }
+  .select-section__form-range legend {
+    margin-right: 44px;
+  }
+  .select-section__form-range .range-box-wrap {
+    justify-content: flex-end;
+  }
+  .select-section__form-range input {
+    margin-right: 0;
+  }
+  .select-section__form-range .select-section__form-range__button {
+    margin-right: 44px;
+  }
+}
+.input-range {
+  width: 220px;
+  -webkit-appearance: none;
+  height: 2px;
+  background-color: #a9a9a9;
+}
+
+.input-range:focus {
+  outline: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  height: 23px;
+  width: 20px;
+  background-image: url("../icons/form-circle.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
 .ml-20px {
   margin-left: 20px;
 }
@@ -2305,6 +2477,7 @@ header {
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
