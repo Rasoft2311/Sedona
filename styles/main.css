@@ -2277,11 +2277,16 @@ header {
   text-transform: uppercase;
 }
 .sort-fieldset .sort-fieldset__label {
-  margin-right: 20px;
   cursor: pointer;
   color: #a9a9a9;
   font-size: 0.75rem;
   text-transform: uppercase;
+}
+.sort-fieldset .sort-fieldset__label .sort-fieldset__type {
+  border-bottom: 1px dotted #669ec0;
+}
+.sort-fieldset .sort-fieldset__label:last-child {
+  margin-right: 0;
 }
 .sort-fieldset .sort-fieldset__label:hover {
   color: #669ec0;
@@ -2289,11 +2294,12 @@ header {
 .sort-fieldset .sort-fieldset__label:active {
   color: #000;
 }
+.sort-fieldset .sort-fieldset__label:active .sort-fieldset__type {
+  border-bottom: none;
+}
 .sort-fieldset .sort-fieldset__input:checked + .sort-fieldset__type {
   color: #669ec0;
-}
-.sort-fieldset .sort-fieldset__label:last-child {
-  margin-right: 0;
+  border-bottom: none;
 }
 
 .order-fieldset .order-fieldset__label {
@@ -2325,6 +2331,10 @@ header {
     margin-bottom: 5px;
   }
 
+  .sort-fieldset__label {
+    margin-right: 20px;
+  }
+
   .order-fieldset {
     padding-top: 27px;
   }
@@ -2340,6 +2350,10 @@ header {
   }
 
   .sort-fieldset__name {
+    margin-right: 40px;
+  }
+
+  .sort-fieldset__label {
     margin-right: 40px;
   }
 }
@@ -2404,6 +2418,10 @@ fieldset {
   }
 }
 @media screen and (min-width: 769px), print {
+  .widescreen-mr-10 {
+    margin-right: 10px;
+  }
+
   .section {
     padding: 0 50px;
   }

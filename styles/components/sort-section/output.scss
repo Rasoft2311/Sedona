@@ -27,6 +27,10 @@
     color:$color-form-icon;
     font-size: $typography-text-x-small;
     text-transform: uppercase;
+
+    .sort-fieldset__type{
+      border-bottom: 1px dotted $color-primary-hover;
+    }
   }
 
   .sort-fieldset__label:last-child{
@@ -39,10 +43,15 @@
 
   .sort-fieldset__label:active{
     color:$color-primary-text;
+
+    .sort-fieldset__type{
+      border-bottom: none;
+    }
   }
 
   .sort-fieldset__input:checked + .sort-fieldset__type{
     color:$color-primary-hover;
+    border-bottom: none;
   }
 }
 

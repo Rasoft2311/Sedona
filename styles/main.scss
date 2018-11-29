@@ -82,6 +82,10 @@ fieldset{
 
 @include tablet{
 
+  .widescreen-mr-10{
+    margin-right: 10px;
+  }
+
   .section{
     padding: 0 50px;
   }
