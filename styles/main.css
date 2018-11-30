@@ -2285,6 +2285,10 @@ header {
   position: relative;
   padding-left: 35px;
 }
+.check-fieldset .check-fieldset__input:checked + .custom-checkbox {
+  background-image: url("../icons/checkbox-on.svg");
+  width: 27px;
+}
 
 .select-section__range-fieldset {
   margin-left: auto;
@@ -2322,24 +2326,23 @@ header {
   position: absolute;
   left: 0;
   top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../icons/checkbox-off.svg");
 }
 .custom-checkbox path {
   fill: #FFF;
 }
 
 @media screen and (min-width: 769px), print {
-  .select-section__range-fieldset {
-    margin-right: 0;
-  }
-
   .select-section__form {
-    justify-content: space-between;
     padding: 30px 0;
   }
 
-  .check-fieldset {
-    flex-basis: 33.33%;
+  .check-fieldset--mr-110 {
+    margin-right: 110px;
   }
+
   .check-fieldset .check-fieldset__name {
     color: #FFF;
   }
@@ -2355,21 +2358,23 @@ header {
 }
 @media screen and (max-width: 768px) {
   .select-section__form {
+    justify-content: center;
     flex-wrap: wrap;
     padding: 30px 20px;
   }
 
   .select-section__range-fieldset {
-    margin-right: auto;
     margin-top: 25px;
   }
 
-  .check-fieldset {
-    flex-basis: 50%;
-  }
-
   .range-fieldset {
-    flex-basis: 220px;
+    flex-basis: 100%;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .check-fieldset.mobile-mr-25, .check-fieldset.mobile-ml-25 {
+    margin: 0;
   }
 }
 .input-range {
@@ -2508,6 +2513,14 @@ fieldset {
 
   .disp-none-mobile {
     display: none;
+  }
+
+  .mobile-mr-25 {
+    margin-right: 25px;
+  }
+
+  .mobile-ml-25 {
+    margin-left: 25px;
   }
 }
 @media screen and (min-width: 769px), print {

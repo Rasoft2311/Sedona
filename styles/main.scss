@@ -79,6 +79,14 @@ fieldset{
   .disp-none-mobile{
     display: none;
   }
+
+  .mobile-mr-25{
+    margin-right: 25px;
+  }
+
+  .mobile-ml-25{
+    margin-left: 25px;
+  }
 }
 
 @include tablet{
