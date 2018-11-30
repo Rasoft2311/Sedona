@@ -2329,6 +2329,7 @@ header {
   width: 23px;
   height: 23px;
   background-image: url("../icons/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 .custom-checkbox path {
   fill: #FFF;
