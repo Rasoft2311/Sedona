@@ -11,101 +11,55 @@
 
 .select-section__form{
   display: flex;
-  flex-wrap: wrap;
-  padding: 30px 20px;
 }
 
-.select-section__form-check{
-  flex-basis: 50%;
+.check-fieldset{
   display: flex;
-  justify-content: center;
 
-  legend{
+  .check-fieldset__name{
     color:$color-secondary-active;
     font-weight: bold;
     font-size: $typography-text-medium;
     text-transform: uppercase;
   }
 
-  input{
-    position: absolute;
-    opacity: 0;
+  .check-fieldset__label{
     cursor: pointer;
-    height: 0;
-    width: 0;
+    margin-top:20px;
+    color:$color-text;
+    font-size: $typography-text-small;
+    text-transform: uppercase;
+    position: relative;
+    padding-left:35px;
   }
 
 }
 
-.select-section__form-range{
-  flex-basis: 100%;
-  margin-top:25px;
+.select-section__range-fieldset{
+  margin-left: auto;
+}
 
-  legend{
+.range-fieldset{
+  display: flex;
+  flex-direction: column;
+
+  .range-fieldset__name{
     color:$color-text;
     font-size: $typography-text-medium;
     text-transform: uppercase;
-    margin: 0 auto;
   }
 
-  .range-box-wrap{
-    display: flex;
-    justify-content: center;
-    margin: 10px 0 20px;
+  .range-fieldset__range-box{
+    margin: 10px 0 16px
   }
 
-  .range-box{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-basis: 220px;
-    min-height: 35px;
-    border: 2px solid $color-text;
-    border-radius: 4px;
-
-    .range-box__from{
-      flex-basis: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color:$color-text;
-      font-size: $typography-text-small;
-      text-transform: uppercase;
-    }
-
-    .range-box__from::after{
-      content: '';
-      position: absolute;
-      width: 2px;
-      right: 50%;
-      top:5px;
-      bottom: 5px;
-      transform: translateX(-50%);
-      background-color:$color-text;
-    }
-
-    .range-box__to{
-      flex-basis: 50%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color:$color-text;
-      font-size: $typography-text-small;
-      text-transform: uppercase;
-    }
+  .range-fieldset__input{
+    margin-bottom: 26px;
   }
 
-
-
-  input{
-    display: block;
-    margin:0 auto;
-  }
-  
-  .select-section__form-range__button{
+  .range-fieldset__button{
+    align-self: center;
     cursor: pointer;
-    display: block;
-    margin:0 auto;
     border: 2px solid $color-text;
     border-radius: 4px;
     width: 133px;
@@ -115,19 +69,8 @@
     font-size: $typography-text-small;
     text-transform: uppercase;
   }
-
-
 }
 
-.select-section__form-check-label{
-  cursor: pointer;
-  margin-top:20px;
-  color:$color-text;
-  font-size: $typography-text-small;
-  text-transform: uppercase;
-  position: relative;
-  padding-left:35px;
-}
 
 .custom-checkbox{
   position: absolute;
@@ -141,39 +84,52 @@
 
 
 @include tablet{
+  .select-section__range-fieldset{
+    margin-right: 0;
+  }
 
   .select-section__form{
     justify-content: space-between;
-    flex-wrap: nowrap;
     padding: 30px 0;
   }
 
-  .select-section__form-check{
+  .check-fieldset{
     flex-basis: 33.33%;
-    legend{
+    .check-fieldset__name{
       color:$color-text;
     }
   }
 
-  .select-section__form-range{
-    flex-basis: 33.33%;
-    margin-top: 0;
+  .range-fieldset{
+    flex-basis: 220px;
+  }
 
-    legend{
-      margin-right: 44px;
-    }
+}
 
-    .range-box-wrap{
-      justify-content: flex-end;
-    }
+@include desktop{
+  .range-fieldset {
+    flex-basis: 314px;
+  }
+}
 
-    input{
-      margin-right: 0;
-    }
+@include mobile{
 
-    .select-section__form-range__button{
-      margin-right: 44px;
-    }
+  .select-section__form{
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+
+  .select-section__range-fieldset{
+    margin-right: auto;
+    margin-top:25px;
+  }
+
+  .check-fieldset{
+    flex-basis: 50%;
+  }
+
+  .range-fieldset{
+    flex-basis: 220px;
   }
 
 }

@@ -37,59 +37,57 @@
   <section class="select-section section">
       <h2 class="visually-hidden">Выбор параметров гостиницы</h2>
       <form class="select-section__form" id="hotel-parametrs-form">
-          <fieldset class="select-section__form-check">
-              <legend>Инфраструктура:</legend>
-              <label class="select-section__form-check-label">
+          <fieldset class="check-fieldset">
+              <legend class="check-fieldset__name">Инфраструктура:</legend>
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                     <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                   </span>
-                  <input type="checkbox" name="accessibility" value="pool">Бассейн
+                  <input class="visually-hidden" type="checkbox" name="accessibility" value="pool">Бассейн
               </label>
-              <label class="select-section__form-check-label">
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                   </span>
-                  <input type="checkbox" name="accessibility" value="parking"> Парковка
+                  <input class="visually-hidden" type="checkbox" name="accessibility" value="parking"> Парковка
               </label>
-              <label class="select-section__form-check-label">
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23"><path d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>
                   </span>
-                  <input type="checkbox" name="accessibility" value="wifi"> Wi-Fi
+                  <input class="visually-hidden" type="checkbox" name="accessibility" value="wifi"> Wi-Fi
               </label>
           </fieldset>
-          <fieldset class="select-section__form-check">
-              <legend>Тип жилья:</legend>
-              <label class="select-section__form-check-label">
+          <fieldset class="check-fieldset">
+              <legend class="check-fieldset__name">Тип жилья:</legend>
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                   </span>
-                  <input type="checkbox" name="living" value="hotel"> Гостиница
+                  <input class="visually-hidden" type="checkbox" name="living" value="hotel"> Гостиница
               </label>
-              <label class="select-section__form-check-label">
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                   </span>
-                  <input type="checkbox" name="living" value="motel"> Мотель
+                  <input class="visually-hidden" type="checkbox" name="living" value="motel"> Мотель
               </label>
-              <label class="select-section__form-check-label">
+              <label class="check-fieldset__label">
                   <span class="custom-checkbox">
                       <svg xmlns="http://www.w3.org/2000/svg" width="27" height="23"><path d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>
                   </span>
-                  <input type="checkbox" name="living" value="apartment"> Апартаменты
+                  <input class="visually-hidden" type="checkbox" name="living" value="apartment"> Апартаменты
               </label>
           </fieldset>
-          <fieldset class="select-section__form-range">
-              <legend>Стоимость в сутки(P):</legend>
-              <p class="range-box-wrap">
-                  <span class="range-box">
-                      <span class="range-box__from">От 0</span>
-                      <span class="range-box__to">До 3000</span>
-                  </span>
-              </p>
-              <input class="input-range" type="range" name="range"><br>
-              <button class="select-section__form-range__button">Показать</button>
-          </fieldset>
+          <div class="range-fieldset select-section__range-fieldset">
+              <span class="range-fieldset__name">Стоимость в сутки(P):</span>
+              <span class="range-box range-fieldset__range-box">
+                  <span class="range-box__from">От 0</span>
+                  <span class="range-box__to">До 3000</span>
+              </span>
+              <input class="input-range range-fieldset__input" type="range" name="range">
+              <button class="range-fieldset__button">Показать</button>
+          </div>
       </form>
   </section>
 

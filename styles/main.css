@@ -2265,89 +2265,49 @@ header {
 
 .select-section__form {
   display: flex;
-  flex-wrap: wrap;
-  padding: 30px 20px;
 }
 
-.select-section__form-check {
-  flex-basis: 50%;
+.check-fieldset {
   display: flex;
-  justify-content: center;
 }
-.select-section__form-check legend {
+.check-fieldset .check-fieldset__name {
   color: #503e33;
   font-weight: bold;
   font-size: 1rem;
   text-transform: uppercase;
 }
-.select-section__form-check input {
-  position: absolute;
-  opacity: 0;
+.check-fieldset .check-fieldset__label {
   cursor: pointer;
-  height: 0;
-  width: 0;
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 35px;
 }
 
-.select-section__form-range {
-  flex-basis: 100%;
-  margin-top: 25px;
+.select-section__range-fieldset {
+  margin-left: auto;
 }
-.select-section__form-range legend {
+
+.range-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.range-fieldset .range-fieldset__name {
   color: #FFF;
   font-size: 1rem;
   text-transform: uppercase;
-  margin: 0 auto;
 }
-.select-section__form-range .range-box-wrap {
-  display: flex;
-  justify-content: center;
-  margin: 10px 0 20px;
+.range-fieldset .range-fieldset__range-box {
+  margin: 10px 0 16px;
 }
-.select-section__form-range .range-box {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-basis: 220px;
-  min-height: 35px;
-  border: 2px solid #FFF;
-  border-radius: 4px;
+.range-fieldset .range-fieldset__input {
+  margin-bottom: 26px;
 }
-.select-section__form-range .range-box .range-box__from {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-}
-.select-section__form-range .range-box .range-box__from::after {
-  content: "";
-  position: absolute;
-  width: 2px;
-  right: 50%;
-  top: 5px;
-  bottom: 5px;
-  transform: translateX(-50%);
-  background-color: #FFF;
-}
-.select-section__form-range .range-box .range-box__to {
-  flex-basis: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFF;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-}
-.select-section__form-range input {
-  display: block;
-  margin: 0 auto;
-}
-.select-section__form-range .select-section__form-range__button {
+.range-fieldset .range-fieldset__button {
+  align-self: center;
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
   border: 2px solid #FFF;
   border-radius: 4px;
   width: 133px;
@@ -2356,16 +2316,6 @@ header {
   color: #FFF;
   font-size: 0.875rem;
   text-transform: uppercase;
-}
-
-.select-section__form-check-label {
-  cursor: pointer;
-  margin-top: 20px;
-  color: #FFF;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  position: relative;
-  padding-left: 35px;
 }
 
 .custom-checkbox {
@@ -2378,41 +2328,65 @@ header {
 }
 
 @media screen and (min-width: 769px), print {
+  .select-section__range-fieldset {
+    margin-right: 0;
+  }
+
   .select-section__form {
     justify-content: space-between;
-    flex-wrap: nowrap;
     padding: 30px 0;
   }
 
-  .select-section__form-check {
+  .check-fieldset {
     flex-basis: 33.33%;
   }
-  .select-section__form-check legend {
+  .check-fieldset .check-fieldset__name {
     color: #FFF;
   }
 
-  .select-section__form-range {
-    flex-basis: 33.33%;
-    margin-top: 0;
+  .range-fieldset {
+    flex-basis: 220px;
   }
-  .select-section__form-range legend {
-    margin-right: 44px;
+}
+@media screen and (min-width: 1088px) {
+  .range-fieldset {
+    flex-basis: 314px;
   }
-  .select-section__form-range .range-box-wrap {
-    justify-content: flex-end;
+}
+@media screen and (max-width: 768px) {
+  .select-section__form {
+    flex-wrap: wrap;
+    padding: 30px 20px;
   }
-  .select-section__form-range input {
-    margin-right: 0;
+
+  .select-section__range-fieldset {
+    margin-right: auto;
+    margin-top: 25px;
   }
-  .select-section__form-range .select-section__form-range__button {
-    margin-right: 44px;
+
+  .check-fieldset {
+    flex-basis: 50%;
+  }
+
+  .range-fieldset {
+    flex-basis: 220px;
   }
 }
 .input-range {
-  width: 220px;
+  width: 100%;
   -webkit-appearance: none;
   height: 2px;
   background-color: #a9a9a9;
+}
+@media screen and (max-width: 768px) {
+  .input-range {
+    max-width: 220px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .input-range {
+    max-width: 314px;
+  }
 }
 
 .input-range:focus {
@@ -2426,6 +2400,53 @@ header {
   background-repeat: no-repeat;
   cursor: pointer;
   -webkit-appearance: none;
+}
+
+.range-box {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  min-height: 36px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .range-box {
+    max-width: 220px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .range-box {
+    max-width: 314px;
+  }
+}
+.range-box .range-box__from {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.range-box .range-box__from::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  right: 50%;
+  top: 5px;
+  bottom: 5px;
+  transform: translateX(-50%);
+  background-color: #FFF;
+}
+.range-box .range-box__to {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
 }
 
 .ml-20px {

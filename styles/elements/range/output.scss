@@ -1,8 +1,16 @@
 .input-range {
-  width: 220px;
+  width:100%;
   -webkit-appearance: none;
   height: 2px;
   background-color: $color-form-icon;
+
+  @include mobile{
+    max-width: 220px;
+  }
+
+  @include tablet{
+    max-width: 314px;
+  }
 }
 
 .input-range:focus {
