@@ -2373,8 +2373,25 @@ header {
   padding: 5px 18px;
 }
 
+.hotel__button:hover {
+  color: #FFF;
+}
+
+.hotel__button:active {
+  color: #81b3d2;
+}
+
 .hotel-button--secondary {
   background-color: #766357;
+}
+
+.hotel-button--secondary:hover {
+  background-color: #604e43;
+}
+
+.hotel-button--secondary:active {
+  background-color: #503e33;
+  color: #766357;
 }
 
 .hotel__rating-text {
