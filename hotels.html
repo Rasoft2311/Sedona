@@ -73,7 +73,14 @@
                   <span class="range-box__from">От 0</span>
                   <span class="range-box__to">До 3000</span>
               </span>
-              <input class="input-range range-fieldset__input" type="range" name="range">
+              <div class="input-range range-fieldset__input">
+                  <input class="visually-hidden" type="range" name="range" value="from">
+                  <input class="visually-hidden" type="range" name="range" value="to">
+                  <div class="input-range__line input-range__line--bottom"></div>
+                  <div class="input-range__line input-range__line--top"></div>
+                  <div class="input-range__thumb input-range__thumb--left"></div>
+                  <div class="input-range__thumb input-range__thumb--right"></div>
+              </div>
               <button class="range-fieldset__button">Показать</button>
           </div>
       </form>

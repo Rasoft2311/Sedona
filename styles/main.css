@@ -2380,9 +2380,7 @@ header {
 }
 .input-range {
   width: 100%;
-  -webkit-appearance: none;
-  height: 2px;
-  background-color: #a9a9a9;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
   .input-range {
@@ -2395,17 +2393,38 @@ header {
   }
 }
 
-.input-range:focus {
-  outline: none;
+.input-range__line {
+  height: 2px;
 }
 
-.input-range::-webkit-slider-thumb {
+.input-range__line--top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 25px;
+  background-color: white;
+}
+
+.input-range__line--bottom {
+  background-color: #a9a9a9;
+}
+
+.input-range__thumb {
+  transform: translateY(-50%);
+  position: absolute;
   height: 23px;
   width: 20px;
   background-image: url("../icons/form-circle.svg");
   background-repeat: no-repeat;
   cursor: pointer;
-  -webkit-appearance: none;
+}
+
+.input-range__thumb--right {
+  right: 25px;
+}
+
+.input-range__thumb--left {
+  left: 0;
 }
 
 .range-box {
