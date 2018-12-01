@@ -68,7 +68,7 @@
             <fieldset class="sort-fieldset">
             <span class="sort-fieldset__name">Сортировка:</span>
                     <label class="sort-fieldset__label">
-                        <input class="visually-hidden sort-fieldset__input" type="radio" name="sort" value="price" form="hotel-parametrs-form">
+                        <input class="visually-hidden sort-fieldset__input" type="radio" name="sort" value="price" form="hotel-parametrs-form" checked>
                         <span class="sort-fieldset__type">По цене</span>
                     </label>
                     <label class="sort-fieldset__label">
@@ -83,11 +83,11 @@
             <fieldset class="order-fieldset">
                 <legend class="visually-hidden">Порядок</legend>
                     <label class="order-fieldset__label widescreen-mr-10">
-                        <input class="visually-hidden order-fieldset__input" type="radio" name="order" value="asc" aria-label="По возрастанию" />
+                        <input form="hotel-parametrs-form" class="visually-hidden order-fieldset__input" type="radio" name="order" value="asc" aria-label="По возрастанию" />
                         <svg class="order-fieldset__arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#cacaca" d="M5.5 0L0 10h11z"/></svg>
                     </label>
                     <label class="order-fieldset__label">
-                        <input class="visually-hidden order-fieldset__input" type="radio" name="order" value="desc" aria-label="По убыванию" />
+                        <input form="hotel-parametrs-form" class="visually-hidden order-fieldset__input" type="radio" name="order" value="desc" aria-label="По убыванию" />
                         <svg class="order-fieldset__arrow" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#cacaca" d="M5.5 10L0 0h11"/></svg>
                     </label>
             </fieldset>
