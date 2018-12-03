@@ -1,0 +1,98 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.hotel{
+  @include mobile {
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  @include tablet {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+
+.hotel__name{
+  line-height: 26px;
+  color:$color-primary-text;
+  font-weight: bold;
+  font-size: $typography-h2;
+  text-transform: uppercase;
+}
+
+.hotel__info{
+  margin-top:2px;
+  color:$color-primary-text;
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+}
+
+.hotel__type{
+  margin-right: 15px;
+}
+
+.hotel__button{
+  font-size: $typography-text-small;
+  display: inline-block;
+  margin-top:10px;
+  padding:5px 18px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.hotel__button:hover{
+  color: $color-text;
+}
+
+.hotel__button:active{
+  color: $color-primary;
+}
+
+.hotel__button--secondary{
+  background-color: $color-secondary;
+}
+
+.hotel__button--secondary:hover{
+  background-color: $color-secondary-hover;
+}
+
+.hotel__button--secondary:active{
+  background-color: $color-secondary-active;
+  color:$color-secondary;
+}
+
+.hotel__rating-text{
+  padding:5px 15px;
+  background-color: $color-form-control;
+  color:$color-primary-text;
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+
+  @include mobile{
+    margin-left: 15px;
+  }
+}
+
+@include tablet{
+
+  .hotel__rating{
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hotel__stars{
+    margin-left:auto;
+  }
+
+  .hotel__img{
+    margin-right: 30px;
+  }
+
+}

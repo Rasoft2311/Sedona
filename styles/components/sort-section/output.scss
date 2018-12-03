@@ -4,6 +4,7 @@
 .sort-section{
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid $color-divider;
 
   @include mobile {
       padding: 10px;

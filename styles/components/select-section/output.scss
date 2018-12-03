@@ -11,137 +11,25 @@
 
 .select-section__form{
   display: flex;
-}
 
-.check-fieldset{
-  display: flex;
 
-  .check-fieldset__name{
-    color:$color-secondary-active;
-    font-weight: bold;
-    font-size: $typography-text-medium;
-    text-transform: uppercase;
+  @include mobile {
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 30px 20px;
   }
 
-  .check-fieldset__label{
-    cursor: pointer;
-    margin-top:20px;
-    color:$color-text;
-    font-size: $typography-text-small;
-    text-transform: uppercase;
-    position: relative;
-    padding-left:35px;
+  @include tablet {
+      padding: 30px 0;
   }
-
-  .check-fieldset__input:checked + .custom-checkbox{
-    background-image: url("../icons/checkbox-on.svg");
-    width:27px;
-  }
-
 }
 
 .select-section__range-fieldset{
   margin-left: auto;
-}
 
-.range-fieldset{
-  display: flex;
-  flex-direction: column;
-
-  .range-fieldset__name{
-    color:$color-text;
-    font-size: $typography-text-medium;
-    text-transform: uppercase;
-  }
-
-  .range-fieldset__range-box{
-    margin: 10px 0 16px
-  }
-
-  .range-fieldset__input{
-    margin-bottom: 26px;
-  }
-
-  .range-fieldset__button{
-    align-self: center;
-    cursor: pointer;
-    border: 2px solid $color-text;
-    border-radius: 4px;
-    width: 133px;
-    height: 32px;
-    background-color: transparent;
-    color:$color-text;
-    font-size: $typography-text-small;
-    text-transform: uppercase;
+  @include mobile {
+      margin-top: 25px;
   }
 }
 
 
-.custom-checkbox{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width:23px;
-  height:23px;
-  background-image: url("../icons/checkbox-off.svg");
-  background-repeat:no-repeat;
-
-  path{
-    fill:$color-text;
-  }
-}
-
-
-@include tablet{
-
-  .select-section__form{
-    padding: 30px 0;
-  }
-
-  .check-fieldset--mr-110{
-    margin-right: 110px;
-  }
-
-  .check-fieldset{
-    .check-fieldset__name{
-      color:$color-text;
-    }
-  }
-
-  .range-fieldset{
-    flex-basis: 220px;
-  }
-
-}
-
-@include desktop{
-  .range-fieldset {
-    flex-basis: 314px;
-  }
-}
-
-@include mobile{
-
-  .select-section__form{
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 30px 20px;
-  }
-
-  .select-section__range-fieldset{
-    margin-top:25px;
-  }
-
-  .range-fieldset{
-    flex-basis: 100%;
-    align-items: center;
-  }
-
-}
-
-@media screen and (max-width: 360px)  {
-
-  .check-fieldset.mobile-mr-25,.check-fieldset.mobile-ml-25{
-    margin: 0;
-  }
-}

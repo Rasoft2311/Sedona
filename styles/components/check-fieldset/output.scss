@@ -1,0 +1,53 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+
+.check-fieldset{
+  display: flex;
+}
+.check-fieldset__name{
+  color: $color-text;
+  font-weight: bold;
+  font-size: $typography-text-medium;
+  text-transform: uppercase;
+}
+
+.check-fieldset__label{
+  cursor: pointer;
+  margin-top:20px;
+  color:$color-text;
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+  position: relative;
+  padding-left:35px;
+}
+
+.check-fieldset__input:checked + .custom-checkbox{
+  background-image: url("../icons/checkbox-on.svg");
+  width:27px;
+}
+
+.mobile-ml-fieldset{
+  margin-left:25px;
+}
+
+.mobile-mr-fieldset{
+  margin-right: 25px;
+}
+
+
+@include tablet{
+  .check-fieldset--mr-110{
+    margin-right: 110px;
+  }
+}
+
+@media screen and (max-width: 360px)  {
+
+  .check-fieldset.mobile-ml-fieldset{
+    margin-left: 5px;
+  }
+  .check-fieldset.mobile-mr-fieldset{
+    margin-right:5px;
+  }
+}

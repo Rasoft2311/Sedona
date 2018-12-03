@@ -21,6 +21,10 @@
 @import "elements/range-box/output";
 @import "components/navbar/output";
 @import "components/hotels-section/output";
+@import "components/check-fieldset/output";
+@import "components/range-fieldset/output";
+@import "elements/custom-checkbox/output";
+@import "components/hotel/output";
 
 .ml-20px{
   margin-left: 20px;
@@ -91,16 +95,13 @@ fieldset{
     display: none;
   }
 
-  .mobile-mr-25{
-    margin-right: 25px;
-  }
-
-  .mobile-ml-25{
-    margin-left: 25px;
-  }
 }
 
 @include tablet{
+
+  main{
+    background-color: $color-text;
+  }
 
   .widescreen-mr-10{
     margin-right: 10px;

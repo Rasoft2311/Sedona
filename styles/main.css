@@ -2259,6 +2259,7 @@ header {
 .sort-section {
   display: flex;
   flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
 }
 @media screen and (max-width: 768px) {
   .sort-section {
@@ -2378,6 +2379,430 @@ header {
   fill: #669ec0;
 }
 
+.select-section {
+  background-image: url("../images/red-rocks-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 80%;
+}
+
+.select-section__form {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .select-section__form {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .select-section__form {
+    padding: 30px 0;
+  }
+}
+
+.select-section__range-fieldset {
+  margin-left: auto;
+}
+@media screen and (max-width: 768px) {
+  .select-section__range-fieldset {
+    margin-top: 25px;
+  }
+}
+
+.input-range {
+  width: 100%;
+  position: relative;
+}
+@media screen and (max-width: 768px) {
+  .input-range {
+    max-width: 220px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .input-range {
+    max-width: 314px;
+  }
+}
+
+.input-range__line {
+  height: 2px;
+}
+
+.input-range__line--top {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 25px;
+  background-color: white;
+}
+
+.input-range__line--bottom {
+  background-color: #a9a9a9;
+}
+
+.input-range__thumb {
+  transform: translateY(-50%);
+  position: absolute;
+  height: 23px;
+  width: 20px;
+  background-image: url("../icons/form-circle.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.input-range__thumb--right {
+  right: 25px;
+}
+
+.input-range__thumb--left {
+  left: 0;
+}
+
+.range-box {
+  position: relative;
+  display: inline-flex;
+  width: 100%;
+  min-height: 36px;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .range-box {
+    max-width: 220px;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .range-box {
+    max-width: 314px;
+  }
+}
+.range-box .range-box__from {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+.range-box .range-box__from::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  right: 50%;
+  top: 5px;
+  bottom: 5px;
+  transform: translateX(-50%);
+  background-color: #FFF;
+}
+.range-box .range-box__to {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: #FFF;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav__logo {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: calc(50% - 69px);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list__item {
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list__item-link {
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: #000;
+}
+
+.nav-list__item-link:hover {
+  color: #81b3d2;
+}
+
+.nav-list__item-link:active {
+  color: #a9a9a9;
+}
+
+.nav__toggler {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav__toggler button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-list {
+    display: block;
+  }
+
+  .nav {
+    padding-top: 80px;
+  }
+
+  .nav-list__item {
+    display: flex;
+    align-items: stretch;
+  }
+
+  .nav-list__item-link {
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav-list__second-item-mr-right {
+    margin-right: 137px;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .nav-list__second-item-mr-right {
+    margin-right: 218px;
+  }
+}
+.hotels-section__hotel {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.check-fieldset {
+  display: flex;
+}
+
+.check-fieldset__name {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.check-fieldset__label {
+  cursor: pointer;
+  margin-top: 20px;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 35px;
+}
+
+.check-fieldset__input:checked + .custom-checkbox {
+  background-image: url("../icons/checkbox-on.svg");
+  width: 27px;
+}
+
+.mobile-ml-fieldset {
+  margin-left: 25px;
+}
+
+.mobile-mr-fieldset {
+  margin-right: 25px;
+}
+
+@media screen and (min-width: 769px), print {
+  .check-fieldset--mr-110 {
+    margin-right: 110px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .check-fieldset.mobile-ml-fieldset {
+    margin-left: 5px;
+  }
+
+  .check-fieldset.mobile-mr-fieldset {
+    margin-right: 5px;
+  }
+}
+.range-fieldset {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .range-fieldset {
+    flex-basis: 100%;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .range-fieldset {
+    flex-basis: 220px;
+  }
+}
+@media screen and (min-width: 1088px) {
+  .range-fieldset {
+    flex-basis: 314px;
+  }
+}
+
+.range-fieldset__name {
+  color: #FFF;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.range-fieldset__range-box {
+  margin: 10px 0 16px;
+}
+
+.range-fieldset__input {
+  margin-bottom: 26px;
+}
+
+.range-fieldset__button {
+  align-self: center;
+  cursor: pointer;
+  border: 2px solid #FFF;
+  border-radius: 4px;
+  width: 133px;
+  height: 32px;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.custom-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+.custom-checkbox path {
+  fill: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .hotel {
+    padding: 20px 10px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 769px), print {
+  .hotel {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.hotel__name {
+  line-height: 26px;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.3125rem;
+  text-transform: uppercase;
+}
+
+.hotel__info {
+  margin-top: 2px;
+  color: #000;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.hotel__type {
+  margin-right: 15px;
+}
+
+.hotel__button {
+  font-size: 0.875rem;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 18px;
+}
+@media screen and (max-width: 768px) {
+  .hotel__button {
+    margin-bottom: 20px;
+  }
+}
+
+.hotel__button:hover {
+  color: #FFF;
+}
+
+.hotel__button:active {
+  color: #81b3d2;
+}
+
+.hotel__button--secondary {
+  background-color: #766357;
+}
+
+.hotel__button--secondary:hover {
+  background-color: #604e43;
+}
+
+.hotel__button--secondary:active {
+  background-color: #503e33;
+  color: #766357;
+}
+
+.hotel__rating-text {
+  padding: 5px 15px;
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .hotel__rating-text {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 769px), print {
+  .hotel__rating {
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .hotel__stars {
+    margin-left: auto;
+  }
+
+  .hotel__img {
+    margin-right: 30px;
+  }
+}
 .ml-20px {
   margin-left: 20px;
 }
@@ -2427,9 +2852,14 @@ header {
 
 fieldset {
   border: none;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
+  .mob-mr-10 {
+    margin-right: 10px;
+  }
+
   .mob-only-ml-54 {
     margin-left: 54px;
   }
@@ -2439,22 +2869,29 @@ fieldset {
   }
 }
 @media screen and (min-width: 769px), print {
+  main {
+    background-color: #FFF;
+  }
+
   .widescreen-mr-10 {
     margin-right: 10px;
   }
 
   .section {
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 @media screen and (min-width: 1088px) {
   .section {
-    padding: 0 75px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 @media screen and (min-width: 1280px) {
   .section {
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
 

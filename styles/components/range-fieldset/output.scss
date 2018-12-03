@@ -1,0 +1,47 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.range-fieldset{
+  display: flex;
+  flex-direction: column;
+
+  @include mobile{
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  @include tablet {
+    flex-basis: 220px;
+  }
+
+  @include desktop{
+    flex-basis: 314px;
+  }
+}
+
+.range-fieldset__name{
+  color:$color-text;
+  font-size: $typography-text-medium;
+  text-transform: uppercase;
+}
+
+.range-fieldset__range-box{
+  margin: 10px 0 16px
+}
+
+.range-fieldset__input{
+  margin-bottom: 26px;
+}
+
+.range-fieldset__button{
+  align-self: center;
+  cursor: pointer;
+  border: 2px solid $color-text;
+  border-radius: 4px;
+  width: 133px;
+  height: 32px;
+  background-color: transparent;
+  color:$color-text;
+  font-size: $typography-text-small;
+  text-transform: uppercase;
+}

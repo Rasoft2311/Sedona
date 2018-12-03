@@ -1,0 +1,13 @@
+.custom-checkbox{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:23px;
+  height:23px;
+  background-image: url("../icons/checkbox-off.svg");
+  background-repeat:no-repeat;
+
+  path{
+    fill:$color-text;
+  }
+}
