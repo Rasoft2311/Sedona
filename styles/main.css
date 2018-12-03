@@ -2268,6 +2268,7 @@ header {
 
 @media screen and (min-width: 769px), print {
   .sort-section.section {
+    align-items: baseline;
     padding-top: 37px;
     padding-bottom: 37px;
   }
