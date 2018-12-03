@@ -1,0 +1,48 @@
+
+
+.input-range{
+  width:100%;
+  position:relative;
+
+  @include mobile{
+    max-width: 220px;
+  }
+
+  @include tablet{
+    max-width: 314px;
+  }
+}
+
+.input-range__line{
+  height:2px;
+}
+
+.input-range__line--top{
+  position:absolute;
+  left:0;
+  top:0;
+  right:25px;
+  background-color:white;
+}
+
+.input-range__line--bottom{
+  background-color:$color-form-icon;
+}
+
+.input-range__thumb{
+  transform:translateY(-50%);
+  position:absolute;
+  height: 23px;
+  width: 20px;
+  background-image: url("../icons/form-circle.svg");
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.input-range__thumb--right{
+  right:25px;
+}
+
+.input-range__thumb--left{
+  left:0;
+}

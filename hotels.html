@@ -33,31 +33,56 @@
 </header>
 
 <main>
-    <h1>Выбор гостиниц</h1>
-  <section>
-      <h2>Выбор параметров гостиницы</h2>
-      <form id="hotel-parametrs-form">
-          <fieldset>
-              <legend>Инфраструктура:</legend>
-              <value><input type="checkbox" name="accessibility" value="pool"></value> Бассейн<br>
-              <value><input type="checkbox" name="accessibility" value="parking"> Парковка</value><br>
-              <value><input type="checkbox" name="accessibility" value="wifi"> Wi-Fi</value>
+    <h1 class="visually-hidden">Выбор гостиниц</h1>
+  <section class="select-section section">
+      <h2 class="visually-hidden">Выбор параметров гостиницы</h2>
+      <form class="select-section__form" id="hotel-parametrs-form">
+          <fieldset class="check-fieldset mobile-mr-25 check-fieldset--mr-110">
+              <legend class="check-fieldset__name">Инфраструктура:</legend>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="accessibility" value="pool">Бассейн
+                  <span class="custom-checkbox"></span>
+              </label>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="accessibility" value="parking"> Парковка
+                  <span class="custom-checkbox"></span>
+              </label>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="accessibility" value="wifi"> Wi-Fi
+                  <span class="custom-checkbox"></span>
+              </label>
           </fieldset>
-          <fieldset>
-              <legend>Тип жилья:</legend>
-              <value><input type="checkbox" name="living" value="hotel"> Гостиница</value><br>
-              <value><input type="checkbox" name="living" value="motel"> Мотель</value><br>
-              <value><input type="checkbox" name="living" value="apartment"> Апартаменты</value>
+          <fieldset class="check-fieldset mobile-ml-25">
+              <legend class="check-fieldset__name">Тип жилья:</legend>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="living" value="hotel"> Гостиница
+                  <span class="custom-checkbox"></span>
+              </label>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="living" value="motel"> Мотель
+                  <span class="custom-checkbox"></span>
+              </label>
+              <label class="check-fieldset__label">
+                  <input class="visually-hidden check-fieldset__input" type="checkbox" name="living" value="apartment"> Апартаменты
+                  <span class="custom-checkbox"></span>
+              </label>
           </fieldset>
-          <fieldset>
-              <legend>Стоимость в сутки:</legend>
-              <p>
-                  <span>От</span>
-                  <span>До</span>
-              </p>
-              <input type="range" name="range"><br>
-              <button>Показать</button>
-          </fieldset>
+          <div class="range-fieldset select-section__range-fieldset">
+              <span class="range-fieldset__name">Стоимость в сутки(P):</span>
+              <span class="range-box range-fieldset__range-box">
+                  <span class="range-box__from">От 0</span>
+                  <span class="range-box__to">До 3000</span>
+              </span>
+              <div class="input-range range-fieldset__input">
+                  <input class="visually-hidden" type="range" name="range" value="from">
+                  <input class="visually-hidden" type="range" name="range" value="to">
+                  <div class="input-range__line input-range__line--bottom"></div>
+                  <div class="input-range__line input-range__line--top"></div>
+                  <div class="input-range__thumb input-range__thumb--left"></div>
+                  <div class="input-range__thumb input-range__thumb--right"></div>
+              </div>
+              <button class="range-fieldset__button">Показать</button>
+          </div>
       </form>
   </section>
 

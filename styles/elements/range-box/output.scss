@@ -1,0 +1,50 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.range-box{
+  position: relative;
+  display: inline-flex;
+  width:100%;
+  min-height: 36px;
+  border: 2px solid $color-text;
+  border-radius: 4px;
+
+  @include mobile{
+    max-width: 220px;
+  }
+
+  @include tablet{
+    max-width: 314px;
+  }
+
+  .range-box__from{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$color-text;
+    font-size: $typography-text-small;
+    text-transform: uppercase;
+  }
+
+  .range-box__from::after{
+    content: '';
+    position: absolute;
+    width: 2px;
+    right: 50%;
+    top:5px;
+    bottom: 5px;
+    transform: translateX(-50%);
+    background-color:$color-text;
+  }
+
+  .range-box__to{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$color-text;
+    font-size: $typography-text-small;
+    text-transform: uppercase;
+  }
+}
