@@ -4,127 +4,42 @@
 .sort-section{
   display: flex;
   flex-wrap: wrap;
+
+  @include mobile {
+      padding: 10px;
+  }
+}
+
+.sort-section.section{
+  @include tablet {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
+}
+
+.sort-section__sort-fieldset{
+  flex-grow: 1;
 }
 
 .sort-section__header{
   color:$color-primary-text;
   font-size: $typography-h2;
+  line-height: $typography-h2;
   font-weight: bold;
   text-transform: uppercase;
-}
 
-.sort-fieldset{
-  flex-grow: 1;
-
-  .sort-fieldset__name{
-    color:$color-primary-text;
-    font-size: $typography-text-x-small;
-    text-transform: uppercase;
+  @include mobile {
+      margin-bottom: 10px;
+      flex-basis: 100%;
   }
 
-  .sort-fieldset__label{
-    cursor: pointer;
-    color:$color-form-icon;
-    font-size: $typography-text-x-small;
-    text-transform: uppercase;
-
-    .sort-fieldset__type{
-      border-bottom: 1px dotted $color-primary-hover;
-    }
-  }
-
-  .sort-fieldset__label:last-child{
-    margin-right: 0;
-  }
-
-  .sort-fieldset__label:hover{
-    color: $color-primary-hover;
-  }
-
-  .sort-fieldset__label:active{
-    color:$color-primary-text;
-
-    .sort-fieldset__type{
-      border-bottom: none;
-    }
-  }
-
-  .sort-fieldset__input:checked + .sort-fieldset__type{
-    color:$color-primary-hover;
-    border-bottom: none;
+  @include tablet {
+      margin-right: 50px;
   }
 }
 
-.order-fieldset{
 
-  .order-fieldset__label{
-    display: inline-flex;
-    cursor: pointer;
-  }
 
-  .order-fieldset__label:hover{
-    path{
-      fill:$color-primary-text;
-    }
-  }
 
-  .order-fieldset__label:active{
-    path{
-      fill:$color-primary-hover;
-    }
-  }
 
-  .order-fieldset__input:checked + .order-fieldset__arrow{
-    path{
-      fill:$color-primary-hover;
-    }
-  }
-}
-
-@include mobile{
-
-  .sort-section {
-    padding: 10px;
-  }
-
-  .sort-section__header {
-    margin-bottom: 10px;
-    flex-basis: 100%;
-  }
-
-  .sort-fieldset__name{
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .sort-fieldset__label {
-    margin-right: 20px;
-  }
-
-  .order-fieldset {
-    padding-top: 27px;
-  }
-
-}
-
-@include tablet{
-
-  .sort-section.section{
-    padding-top:37px;
-    padding-bottom: 37px;
-  }
-
-  .sort-section__header{
-    margin-right: 50px;
-  }
-
-  .sort-fieldset__name{
-    margin-right: 40px;
-  }
-
-  .sort-fieldset__label {
-    margin-right: 40px;
-  }
-
-}
 

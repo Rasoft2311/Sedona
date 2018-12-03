@@ -1,0 +1,57 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.sort-fieldset__name{
+  color:$color-primary-text;
+  font-size: $typography-text-x-small;
+  text-transform: uppercase;
+
+  @include mobile {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  @include tablet {
+    margin-right: 40px;
+  }
+}
+
+.sort-fieldset__label{
+  cursor: pointer;
+  color:$color-form-icon;
+  font-size: $typography-text-x-small;
+  text-transform: uppercase;
+
+  @include mobile {
+    margin-right: 20px;
+  }
+
+  @include tablet{
+    margin-right: 40px;
+  }
+}
+
+.sort-fieldset__type{
+  border-bottom: 1px dotted $color-primary-hover;
+}
+
+.sort-fieldset__label:last-child{
+  margin-right: 0;
+}
+
+.sort-fieldset__label:hover{
+  color: $color-primary-hover;
+}
+
+.sort-fieldset__label:active{
+  color:$color-primary-text;
+
+  .sort-fieldset__type{
+    border-bottom: none;
+  }
+}
+
+.sort-fieldset__input:checked + .sort-fieldset__type{
+  color:$color-primary-hover;
+  border-bottom: none;
+}

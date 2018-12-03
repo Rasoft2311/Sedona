@@ -2260,103 +2260,123 @@ header {
   display: flex;
   flex-wrap: wrap;
 }
-
-.sort-section__header {
-  color: #000;
-  font-size: 1.3125rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.sort-fieldset {
-  flex-grow: 1;
-}
-.sort-fieldset .sort-fieldset__name {
-  color: #000;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-.sort-fieldset .sort-fieldset__label {
-  cursor: pointer;
-  color: #a9a9a9;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-}
-.sort-fieldset .sort-fieldset__label .sort-fieldset__type {
-  border-bottom: 1px dotted #669ec0;
-}
-.sort-fieldset .sort-fieldset__label:last-child {
-  margin-right: 0;
-}
-.sort-fieldset .sort-fieldset__label:hover {
-  color: #669ec0;
-}
-.sort-fieldset .sort-fieldset__label:active {
-  color: #000;
-}
-.sort-fieldset .sort-fieldset__label:active .sort-fieldset__type {
-  border-bottom: none;
-}
-.sort-fieldset .sort-fieldset__input:checked + .sort-fieldset__type {
-  color: #669ec0;
-  border-bottom: none;
-}
-
-.order-fieldset .order-fieldset__label {
-  display: inline-flex;
-  cursor: pointer;
-}
-.order-fieldset .order-fieldset__label:hover path {
-  fill: #000;
-}
-.order-fieldset .order-fieldset__label:active path {
-  fill: #669ec0;
-}
-.order-fieldset .order-fieldset__input:checked + .order-fieldset__arrow path {
-  fill: #669ec0;
-}
-
 @media screen and (max-width: 768px) {
   .sort-section {
     padding: 10px;
   }
-
-  .sort-section__header {
-    margin-bottom: 10px;
-    flex-basis: 100%;
-  }
-
-  .sort-fieldset__name {
-    display: block;
-    margin-bottom: 5px;
-  }
-
-  .sort-fieldset__label {
-    margin-right: 20px;
-  }
-
-  .order-fieldset {
-    padding-top: 27px;
-  }
 }
+
 @media screen and (min-width: 769px), print {
   .sort-section.section {
     padding-top: 37px;
     padding-bottom: 37px;
   }
+}
 
+.sort-section__sort-fieldset {
+  flex-grow: 1;
+}
+
+.sort-section__header {
+  color: #000;
+  font-size: 1.3125rem;
+  line-height: 1.3125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .sort-section__header {
+    margin-bottom: 10px;
+    flex-basis: 100%;
+  }
+}
+@media screen and (min-width: 769px), print {
   .sort-section__header {
     margin-right: 50px;
   }
+}
 
+.sort-fieldset__name {
+  color: #000;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .sort-fieldset__name {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width: 769px), print {
   .sort-fieldset__name {
     margin-right: 40px;
   }
+}
 
+.sort-fieldset__label {
+  cursor: pointer;
+  color: #a9a9a9;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .sort-fieldset__label {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 769px), print {
   .sort-fieldset__label {
     margin-right: 40px;
   }
 }
+
+.sort-fieldset__type {
+  border-bottom: 1px dotted #669ec0;
+}
+
+.sort-fieldset__label:last-child {
+  margin-right: 0;
+}
+
+.sort-fieldset__label:hover {
+  color: #669ec0;
+}
+
+.sort-fieldset__label:active {
+  color: #000;
+}
+.sort-fieldset__label:active .sort-fieldset__type {
+  border-bottom: none;
+}
+
+.sort-fieldset__input:checked + .sort-fieldset__type {
+  color: #669ec0;
+  border-bottom: none;
+}
+
+@media screen and (max-width: 768px) {
+  .order-fieldset {
+    padding-top: 27px;
+  }
+}
+
+.order-fieldset__label {
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.order-fieldset__label:hover path {
+  fill: #000;
+}
+
+.order-fieldset__label:active path {
+  fill: #669ec0;
+}
+
+.order-fieldset__input:checked + .order-fieldset__arrow path {
+  fill: #669ec0;
+}
+
 .ml-20px {
   margin-left: 20px;
 }

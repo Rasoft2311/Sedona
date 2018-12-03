@@ -1,0 +1,33 @@
+@import "../../units/colors/utils";
+@import "../../units/typography/utils";
+
+.order-fieldset{
+  @include mobile{
+    padding-top: 27px;
+  }
+}
+
+.order-fieldset__label{
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.order-fieldset__label:hover{
+  path{
+    fill:$color-primary-text;
+  }
+}
+
+.order-fieldset__label:active{
+  path{
+    fill:$color-primary-hover;
+  }
+}
+
+.order-fieldset__input:checked + .order-fieldset__arrow{
+  path{
+    fill:$color-primary-hover;
+  }
+}
+
+
