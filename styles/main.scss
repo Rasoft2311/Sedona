@@ -19,6 +19,8 @@
 @import "components/select-section/output";
 @import "elements/range/output";
 @import "elements/range-box/output";
+@import "components/navbar/output";
+@import "components/hotels-section/output";
 
 .ml-20px{
   margin-left: 20px;
@@ -77,6 +79,10 @@ fieldset{
 
 @include mobile{
 
+  .mob-mr-10{
+    margin-right: 10px;
+  }
+
   .mob-only-ml-54{
     margin-left: 54px;
   }
@@ -101,19 +107,22 @@ fieldset{
   }
 
   .section{
-    padding: 0 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 @include desktop{
 
   .section{
-    padding: 0 75px;
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 
 @include widescreen{
   .section{
-    padding: 0 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 }
